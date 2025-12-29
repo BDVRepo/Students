@@ -137,8 +137,13 @@ GO
 ALTER TABLE [Оценки] CHECK CONSTRAINT [FK_Оценки_Предметы2];
 GO
 
-ALTER TABLE [Оценки]  WITH CHECK ADD  CONSTRAINT [FK_Оценки_Студенты] FOREIGN KEY([Код студента])
-REFERENCES [Студенты] ([Код студента]);
+ALTER TABLE [Оценки] WITH CHECK ADD CONSTRAINT [FK_Оценки_Студенты] 
+FOREIGN KEY([Код студента])
+REFERENCES [Студенты] ([Код студента])
+ON DELETE CASCADE;
+GO
+
+ALTER TABLE [Оценки] CHECK CONSTRAINT [FK_Оценки_Студенты];
 GO
 
 ALTER TABLE [Оценки] CHECK CONSTRAINT [FK_Оценки_Студенты];

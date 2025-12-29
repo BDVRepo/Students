@@ -1,5 +1,6 @@
 using System;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Students
 {
@@ -49,9 +50,42 @@ namespace Students
         private void button7_Click(object sender, EventArgs e)
         {
             // Сохранить изменения
-            this.Validate();
-            this.студентыBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.studentsDataSet);
+            try
+            {
+                this.Validate();
+                this.студентыBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.studentsDataSet);
+                MessageBox.Show("Изменения успешно сохранены.", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (SqlException sqlEx)
+            {
+                // Обработка ошибок базы данных
+                if (sqlEx.Message.Contains("FK_Оценки_Студенты") || sqlEx.Message.Contains("REFERENCE"))
+                {
+                    MessageBox.Show(
+                        "Невозможно удалить студента, так как у него есть связанные записи в таблице 'Оценки'.\n\n" +
+                        "Сначала удалите все оценки этого студента, а затем попробуйте удалить студента снова.",
+                        "Ошибка удаления",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    MessageBox.Show(
+                        "Ошибка при сохранении данных:\n\n" + sqlEx.Message,
+                        "Ошибка базы данных",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Произошла ошибка при сохранении:\n\n" + ex.Message,
+                    "Ошибка",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
 
         private void Form2_Load(object sender, EventArgs e)

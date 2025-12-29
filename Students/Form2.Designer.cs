@@ -29,36 +29,36 @@ namespace Students
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label кодСтудентаLabel;
-            System.Windows.Forms.Label фИОLabel;
-            System.Windows.Forms.Label полLabel;
-            System.Windows.Forms.Label датаРожденияLabel;
-            System.Windows.Forms.Label родителиLabel;
-            System.Windows.Forms.Label адресLabel;
-            System.Windows.Forms.Label телефонLabel;
-            System.Windows.Forms.Label паспортныеДанныеLabel;
-            System.Windows.Forms.Label номерЗачёткиLabel;
-            System.Windows.Forms.Label датаПоступленияLabel;
-            System.Windows.Forms.Label группаLabel;
-            System.Windows.Forms.Label курсLabel;
-            System.Windows.Forms.Label кодСпециальностиLabel;
-            System.Windows.Forms.Label очнаяФормаОбученияLabel;
-            System.Windows.Forms.Label labelTitle;
+            this.кодСтудентаLabel = new System.Windows.Forms.Label();
+            this.фИОLabel = new System.Windows.Forms.Label();
+            this.полLabel = new System.Windows.Forms.Label();
+            this.датаРожденияLabel = new System.Windows.Forms.Label();
+            this.родителиLabel = new System.Windows.Forms.Label();
+            this.адресLabel = new System.Windows.Forms.Label();
+            this.телефонLabel = new System.Windows.Forms.Label();
+            this.паспортныеДанныеLabel = new System.Windows.Forms.Label();
+            this.номерЗачёткиLabel = new System.Windows.Forms.Label();
+            this.датаПоступленияLabel = new System.Windows.Forms.Label();
+            this.группаLabel = new System.Windows.Forms.Label();
+            this.курсLabel = new System.Windows.Forms.Label();
+            this.кодСпециальностиLabel = new System.Windows.Forms.Label();
+            this.очнаяФормаОбученияLabel = new System.Windows.Forms.Label();
+            this.labelTitle = new System.Windows.Forms.Label();
             this.студентыBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.студентыBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.studentsDataSet = new Students.StudentsDataSet();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.студентыBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.studentsDataSet = new Students.StudentsDataSet();
             this.кодСтудентаTextBox = new System.Windows.Forms.TextBox();
             this.фИОTextBox = new System.Windows.Forms.TextBox();
             this.полComboBox = new System.Windows.Forms.ComboBox();
@@ -81,24 +81,6 @@ namespace Students
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.студентыTableAdapter = new Students.StudentsDataSetTableAdapters.СтудентыTableAdapter();
-            this.специальностиTableAdapter = new Students.StudentsDataSetTableAdapters.СпециальностиTableAdapter();
-            this.tableAdapterManager = new Students.StudentsDataSetTableAdapters.TableAdapterManager();
-            кодСтудентаLabel = new System.Windows.Forms.Label();
-            фИОLabel = new System.Windows.Forms.Label();
-            полLabel = new System.Windows.Forms.Label();
-            датаРожденияLabel = new System.Windows.Forms.Label();
-            родителиLabel = new System.Windows.Forms.Label();
-            адресLabel = new System.Windows.Forms.Label();
-            телефонLabel = new System.Windows.Forms.Label();
-            паспортныеДанныеLabel = new System.Windows.Forms.Label();
-            номерЗачёткиLabel = new System.Windows.Forms.Label();
-            датаПоступленияLabel = new System.Windows.Forms.Label();
-            группаLabel = new System.Windows.Forms.Label();
-            курсLabel = new System.Windows.Forms.Label();
-            кодСпециальностиLabel = new System.Windows.Forms.Label();
-            очнаяФормаОбученияLabel = new System.Windows.Forms.Label();
-            labelTitle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.студентыBindingNavigator)).BeginInit();
             this.студентыBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.студентыBindingSource)).BeginInit();
@@ -109,139 +91,139 @@ namespace Students
             // 
             // кодСтудентаLabel
             // 
-            кодСтудентаLabel.AutoSize = true;
-            кодСтудентаLabel.Location = new System.Drawing.Point(30, 120);
-            кодСтудентаLabel.Name = "кодСтудентаLabel";
-            кодСтудентаLabel.Size = new System.Drawing.Size(75, 13);
-            кодСтудентаLabel.TabIndex = 1;
-            кодСтудентаLabel.Text = "Код студента:";
+            this.кодСтудентаLabel.AutoSize = true;
+            this.кодСтудентаLabel.Location = new System.Drawing.Point(30, 120);
+            this.кодСтудентаLabel.Name = "кодСтудентаLabel";
+            this.кодСтудентаLabel.Size = new System.Drawing.Size(77, 13);
+            this.кодСтудентаLabel.TabIndex = 1;
+            this.кодСтудентаLabel.Text = "Код студента:";
             // 
             // фИОLabel
             // 
-            фИОLabel.AutoSize = true;
-            фИОLabel.Location = new System.Drawing.Point(30, 150);
-            фИОLabel.Name = "фИОLabel";
-            фИОLabel.Size = new System.Drawing.Size(37, 13);
-            фИОLabel.TabIndex = 3;
-            фИОLabel.Text = "ФИО:";
+            this.фИОLabel.AutoSize = true;
+            this.фИОLabel.Location = new System.Drawing.Point(30, 150);
+            this.фИОLabel.Name = "фИОLabel";
+            this.фИОLabel.Size = new System.Drawing.Size(37, 13);
+            this.фИОLabel.TabIndex = 3;
+            this.фИОLabel.Text = "ФИО:";
             // 
             // полLabel
             // 
-            полLabel.AutoSize = true;
-            полLabel.Location = new System.Drawing.Point(30, 180);
-            полLabel.Name = "полLabel";
-            полLabel.Size = new System.Drawing.Size(30, 13);
-            полLabel.TabIndex = 5;
-            полLabel.Text = "Пол:";
+            this.полLabel.AutoSize = true;
+            this.полLabel.Location = new System.Drawing.Point(30, 180);
+            this.полLabel.Name = "полLabel";
+            this.полLabel.Size = new System.Drawing.Size(30, 13);
+            this.полLabel.TabIndex = 5;
+            this.полLabel.Text = "Пол:";
             // 
             // датаРожденияLabel
             // 
-            датаРожденияLabel.AutoSize = true;
-            датаРожденияLabel.Location = new System.Drawing.Point(30, 210);
-            датаРожденияLabel.Name = "датаРожденияLabel";
-            датаРожденияLabel.Size = new System.Drawing.Size(89, 13);
-            датаРожденияLabel.TabIndex = 7;
-            датаРожденияLabel.Text = "Дата рождения:";
+            this.датаРожденияLabel.AutoSize = true;
+            this.датаРожденияLabel.Location = new System.Drawing.Point(30, 210);
+            this.датаРожденияLabel.Name = "датаРожденияLabel";
+            this.датаРожденияLabel.Size = new System.Drawing.Size(89, 13);
+            this.датаРожденияLabel.TabIndex = 7;
+            this.датаРожденияLabel.Text = "Дата рождения:";
             // 
             // родителиLabel
             // 
-            родителиLabel.AutoSize = true;
-            родителиLabel.Location = new System.Drawing.Point(30, 240);
-            родителиLabel.Name = "родителиLabel";
-            родителиLabel.Size = new System.Drawing.Size(56, 13);
-            родителиLabel.TabIndex = 9;
-            родителиLabel.Text = "Родители:";
+            this.родителиLabel.AutoSize = true;
+            this.родителиLabel.Location = new System.Drawing.Point(30, 240);
+            this.родителиLabel.Name = "родителиLabel";
+            this.родителиLabel.Size = new System.Drawing.Size(58, 13);
+            this.родителиLabel.TabIndex = 9;
+            this.родителиLabel.Text = "Родители:";
             // 
             // адресLabel
             // 
-            адресLabel.AutoSize = true;
-            адресLabel.Location = new System.Drawing.Point(30, 270);
-            адресLabel.Name = "адресLabel";
-            адресLabel.Size = new System.Drawing.Size(41, 13);
-            адресLabel.TabIndex = 11;
-            адресLabel.Text = "Адрес:";
+            this.адресLabel.AutoSize = true;
+            this.адресLabel.Location = new System.Drawing.Point(30, 270);
+            this.адресLabel.Name = "адресLabel";
+            this.адресLabel.Size = new System.Drawing.Size(41, 13);
+            this.адресLabel.TabIndex = 11;
+            this.адресLabel.Text = "Адрес:";
             // 
             // телефонLabel
             // 
-            телефонLabel.AutoSize = true;
-            телефонLabel.Location = new System.Drawing.Point(30, 300);
-            телефонLabel.Name = "телефонLabel";
-            телефонLabel.Size = new System.Drawing.Size(55, 13);
-            телефонLabel.TabIndex = 13;
-            телефонLabel.Text = "Телефон:";
+            this.телефонLabel.AutoSize = true;
+            this.телефонLabel.Location = new System.Drawing.Point(30, 300);
+            this.телефонLabel.Name = "телефонLabel";
+            this.телефонLabel.Size = new System.Drawing.Size(55, 13);
+            this.телефонLabel.TabIndex = 13;
+            this.телефонLabel.Text = "Телефон:";
             // 
             // паспортныеДанныеLabel
             // 
-            паспортныеДанныеLabel.AutoSize = true;
-            паспортныеДанныеLabel.Location = new System.Drawing.Point(30, 330);
-            паспортныеДанныеLabel.Name = "паспортныеДанныеLabel";
-            паспортныеДанныеLabel.Size = new System.Drawing.Size(110, 13);
-            паспортныеДанныеLabel.TabIndex = 15;
-            паспортныеДанныеLabel.Text = "Паспортные данные:";
+            this.паспортныеДанныеLabel.AutoSize = true;
+            this.паспортныеДанныеLabel.Location = new System.Drawing.Point(30, 330);
+            this.паспортныеДанныеLabel.Name = "паспортныеДанныеLabel";
+            this.паспортныеДанныеLabel.Size = new System.Drawing.Size(114, 13);
+            this.паспортныеДанныеLabel.TabIndex = 15;
+            this.паспортныеДанныеLabel.Text = "Паспортные данные:";
             // 
             // номерЗачёткиLabel
             // 
-            номерЗачёткиLabel.AutoSize = true;
-            номерЗачёткиLabel.Location = new System.Drawing.Point(30, 360);
-            номерЗачёткиLabel.Name = "номерЗачёткиLabel";
-            номерЗачёткиLabel.Size = new System.Drawing.Size(82, 13);
-            номерЗачёткиLabel.TabIndex = 17;
-            номерЗачёткиLabel.Text = "Номер зачётки:";
+            this.номерЗачёткиLabel.AutoSize = true;
+            this.номерЗачёткиLabel.Location = new System.Drawing.Point(30, 360);
+            this.номерЗачёткиLabel.Name = "номерЗачёткиLabel";
+            this.номерЗачёткиLabel.Size = new System.Drawing.Size(87, 13);
+            this.номерЗачёткиLabel.TabIndex = 17;
+            this.номерЗачёткиLabel.Text = "Номер зачётки:";
             // 
             // датаПоступленияLabel
             // 
-            датаПоступленияLabel.AutoSize = true;
-            датаПоступленияLabel.Location = new System.Drawing.Point(30, 390);
-            датаПоступленияLabel.Name = "датаПоступленияLabel";
-            датаПоступленияLabel.Size = new System.Drawing.Size(99, 13);
-            датаПоступленияLabel.TabIndex = 19;
-            датаПоступленияLabel.Text = "Дата поступления:";
+            this.датаПоступленияLabel.AutoSize = true;
+            this.датаПоступленияLabel.Location = new System.Drawing.Point(30, 390);
+            this.датаПоступленияLabel.Name = "датаПоступленияLabel";
+            this.датаПоступленияLabel.Size = new System.Drawing.Size(103, 13);
+            this.датаПоступленияLabel.TabIndex = 19;
+            this.датаПоступленияLabel.Text = "Дата поступления:";
             // 
             // группаLabel
             // 
-            группаLabel.AutoSize = true;
-            группаLabel.Location = new System.Drawing.Point(30, 420);
-            группаLabel.Name = "группаLabel";
-            группаLabel.Size = new System.Drawing.Size(45, 13);
-            группаLabel.TabIndex = 21;
-            группаLabel.Text = "Группа:";
+            this.группаLabel.AutoSize = true;
+            this.группаLabel.Location = new System.Drawing.Point(30, 420);
+            this.группаLabel.Name = "группаLabel";
+            this.группаLabel.Size = new System.Drawing.Size(45, 13);
+            this.группаLabel.TabIndex = 21;
+            this.группаLabel.Text = "Группа:";
             // 
             // курсLabel
             // 
-            курсLabel.AutoSize = true;
-            курсLabel.Location = new System.Drawing.Point(30, 450);
-            курсLabel.Name = "курсLabel";
-            курсLabel.Size = new System.Drawing.Size(35, 13);
-            курсLabel.TabIndex = 23;
-            курсLabel.Text = "Курс:";
+            this.курсLabel.AutoSize = true;
+            this.курсLabel.Location = new System.Drawing.Point(30, 450);
+            this.курсLabel.Name = "курсLabel";
+            this.курсLabel.Size = new System.Drawing.Size(34, 13);
+            this.курсLabel.TabIndex = 23;
+            this.курсLabel.Text = "Курс:";
             // 
             // кодСпециальностиLabel
             // 
-            кодСпециальностиLabel.AutoSize = true;
-            кодСпециальностиLabel.Location = new System.Drawing.Point(30, 480);
-            кодСпециальностиLabel.Name = "кодСпециальностиLabel";
-            кодСпециальностиLabel.Size = new System.Drawing.Size(103, 13);
-            кодСпециальностиLabel.TabIndex = 25;
-            кодСпециальностиLabel.Text = "Код специальности:";
+            this.кодСпециальностиLabel.AutoSize = true;
+            this.кодСпециальностиLabel.Location = new System.Drawing.Point(30, 480);
+            this.кодСпециальностиLabel.Name = "кодСпециальностиLabel";
+            this.кодСпециальностиLabel.Size = new System.Drawing.Size(109, 13);
+            this.кодСпециальностиLabel.TabIndex = 25;
+            this.кодСпециальностиLabel.Text = "Код специальности:";
             // 
             // очнаяФормаОбученияLabel
             // 
-            очнаяФормаОбученияLabel.AutoSize = true;
-            очнаяФормаОбученияLabel.Location = new System.Drawing.Point(30, 510);
-            очнаяФормаОбученияLabel.Name = "очнаяФормаОбученияLabel";
-            очнаяФормаОбученияLabel.Size = new System.Drawing.Size(127, 13);
-            очнаяФормаОбученияLabel.TabIndex = 27;
-            очнаяФормаОбученияLabel.Text = "Очная форма обучения:";
+            this.очнаяФормаОбученияLabel.AutoSize = true;
+            this.очнаяФормаОбученияLabel.Location = new System.Drawing.Point(30, 510);
+            this.очнаяФормаОбученияLabel.Name = "очнаяФормаОбученияLabel";
+            this.очнаяФормаОбученияLabel.Size = new System.Drawing.Size(127, 13);
+            this.очнаяФормаОбученияLabel.TabIndex = 27;
+            this.очнаяФормаОбученияLabel.Text = "Очная форма обучения:";
             // 
             // labelTitle
             // 
-            labelTitle.AutoSize = true;
-            labelTitle.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            labelTitle.Location = new System.Drawing.Point(200, 50);
-            labelTitle.Name = "labelTitle";
-            labelTitle.Size = new System.Drawing.Size(350, 36);
-            labelTitle.TabIndex = 0;
-            labelTitle.Text = "Таблица Bashkirov Студенты";
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTitle.Location = new System.Drawing.Point(200, 50);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(419, 37);
+            this.labelTitle.TabIndex = 0;
+            this.labelTitle.Text = "Таблица Bashkirov Студенты";
             // 
             // студентыBindingNavigator
             // 
@@ -273,6 +255,39 @@ namespace Students
             this.студентыBindingNavigator.TabIndex = 0;
             this.студентыBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Добавить";
+            // 
+            // студентыBindingSource
+            // 
+            this.студентыBindingSource.DataMember = "Студенты";
+            this.студентыBindingSource.DataSource = this.studentsDataSet;
+            // 
+            // studentsDataSet
+            // 
+            this.studentsDataSet.DataSetName = "StudentsDataSet";
+            this.studentsDataSet.Tables.AddRange(new System.Data.DataTable[] {
+            this.studentsDataSet.Студенты,
+            this.studentsDataSet.Специальности});
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Удалить";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -298,17 +313,11 @@ namespace Students
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Позиция";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущая позиция";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
             // bindingNavigatorSeparator1
             // 
@@ -336,36 +345,12 @@ namespace Students
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
-            // 
             // bindingNavigatorSaveItem
             // 
             this.bindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.bindingNavigatorSaveItem.Name = "bindingNavigatorSaveItem";
             this.bindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorSaveItem.Text = "Сохранить данные";
-            // 
-            // студентыBindingSource
-            // 
-            this.студентыBindingSource.DataMember = "Студенты";
-            this.студентыBindingSource.DataSource = this.studentsDataSet;
-            // 
-            // studentsDataSet
-            // 
-            this.studentsDataSet.DataSetName = "StudentsDataSet";
-            this.studentsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // кодСтудентаTextBox
             // 
@@ -496,6 +481,7 @@ namespace Students
             // 
             // кодСпециальностиComboBox
             // 
+            this.кодСпециальностиComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.студентыBindingSource, "Код специальности", true));
             this.кодСпециальностиComboBox.DataSource = this.специальностиBindingSource;
             this.кодСпециальностиComboBox.DisplayMember = "Наименование специальности";
             this.кодСпециальностиComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -505,7 +491,6 @@ namespace Students
             this.кодСпециальностиComboBox.Size = new System.Drawing.Size(200, 21);
             this.кодСпециальностиComboBox.TabIndex = 26;
             this.кодСпециальностиComboBox.ValueMember = "Код специальности";
-            this.кодСпециальностиComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.студентыBindingSource, "Код специальности", true));
             // 
             // специальностиBindingSource
             // 
@@ -591,21 +576,6 @@ namespace Students
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // студентыTableAdapter
-            // 
-            this.студентыTableAdapter.ClearBeforeFill = true;
-            // 
-            // специальностиTableAdapter
-            // 
-            this.специальностиTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.СпециальностиTableAdapter = this.специальностиTableAdapter;
-            this.tableAdapterManager.СтудентыTableAdapter = this.студентыTableAdapter;
-            this.tableAdapterManager.UpdateOrder = Students.StudentsDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -618,34 +588,34 @@ namespace Students
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(labelTitle);
-            this.Controls.Add(кодСтудентаLabel);
+            this.Controls.Add(this.labelTitle);
+            this.Controls.Add(this.кодСтудентаLabel);
             this.Controls.Add(this.кодСтудентаTextBox);
-            this.Controls.Add(фИОLabel);
+            this.Controls.Add(this.фИОLabel);
             this.Controls.Add(this.фИОTextBox);
-            this.Controls.Add(полLabel);
+            this.Controls.Add(this.полLabel);
             this.Controls.Add(this.полComboBox);
-            this.Controls.Add(датаРожденияLabel);
+            this.Controls.Add(this.датаРожденияLabel);
             this.Controls.Add(this.датаРожденияDateTimePicker);
-            this.Controls.Add(родителиLabel);
+            this.Controls.Add(this.родителиLabel);
             this.Controls.Add(this.родителиComboBox);
-            this.Controls.Add(адресLabel);
+            this.Controls.Add(this.адресLabel);
             this.Controls.Add(this.адресTextBox);
-            this.Controls.Add(телефонLabel);
+            this.Controls.Add(this.телефонLabel);
             this.Controls.Add(this.телефонMaskedTextBox);
-            this.Controls.Add(паспортныеДанныеLabel);
+            this.Controls.Add(this.паспортныеДанныеLabel);
             this.Controls.Add(this.паспортныеДанныеMaskedTextBox);
-            this.Controls.Add(номерЗачёткиLabel);
+            this.Controls.Add(this.номерЗачёткиLabel);
             this.Controls.Add(this.номерЗачёткиMaskedTextBox);
-            this.Controls.Add(датаПоступленияLabel);
+            this.Controls.Add(this.датаПоступленияLabel);
             this.Controls.Add(this.датаПоступленияDateTimePicker);
-            this.Controls.Add(группаLabel);
+            this.Controls.Add(this.группаLabel);
             this.Controls.Add(this.группаTextBox);
-            this.Controls.Add(курсLabel);
+            this.Controls.Add(this.курсLabel);
             this.Controls.Add(this.курсNumericUpDown);
-            this.Controls.Add(кодСпециальностиLabel);
+            this.Controls.Add(this.кодСпециальностиLabel);
             this.Controls.Add(this.кодСпециальностиComboBox);
-            this.Controls.Add(очнаяФормаОбученияLabel);
+            this.Controls.Add(this.очнаяФормаОбученияLabel);
             this.Controls.Add(this.очнаяФормаОбученияCheckBox);
             this.Controls.Add(this.студентыBindingNavigator);
             this.Name = "Form2";
@@ -660,6 +630,7 @@ namespace Students
             ((System.ComponentModel.ISupportInitialize)(this.специальностиBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
@@ -704,6 +675,21 @@ namespace Students
         private StudentsDataSetTableAdapters.СтудентыTableAdapter студентыTableAdapter;
         private StudentsDataSetTableAdapters.СпециальностиTableAdapter специальностиTableAdapter;
         private StudentsDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.Label кодСтудентаLabel;
+        private System.Windows.Forms.Label фИОLabel;
+        private System.Windows.Forms.Label полLabel;
+        private System.Windows.Forms.Label датаРожденияLabel;
+        private System.Windows.Forms.Label родителиLabel;
+        private System.Windows.Forms.Label адресLabel;
+        private System.Windows.Forms.Label телефонLabel;
+        private System.Windows.Forms.Label паспортныеДанныеLabel;
+        private System.Windows.Forms.Label номерЗачёткиLabel;
+        private System.Windows.Forms.Label датаПоступленияLabel;
+        private System.Windows.Forms.Label группаLabel;
+        private System.Windows.Forms.Label курсLabel;
+        private System.Windows.Forms.Label кодСпециальностиLabel;
+        private System.Windows.Forms.Label очнаяФормаОбученияLabel;
+        private System.Windows.Forms.Label labelTitle;
     }
 }
 
